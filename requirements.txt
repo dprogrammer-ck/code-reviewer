@@ -1,0 +1,7 @@
+langchain
+transformers
+streamlit
+huggingface_hub
+requests
+langchain-groq
+dotenv
