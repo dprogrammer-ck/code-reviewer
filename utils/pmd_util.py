@@ -9,4 +9,5 @@ def detect_language(filename: str) -> str:
     }.get(ext, "")
 
 def get_ruleset_path(language: str) -> str:
-    return f"pmd_rules/{language}/quickstart.xml"
+    ruleset_relative_path = f"pmd-rules/{language}/quickstart.xml"
+    return os.path.abspath(ruleset_relative_path)
